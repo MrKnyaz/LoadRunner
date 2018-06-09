@@ -1,6 +1,6 @@
-# LoadeRunner
+# LoadRunner
 
-**LoadeRunner** is a small and easy to use load testing framework
+**LoadRunner** is a small and easy to use load testing framework
   - Use **HtmlUnit**, **Selenium WebDriver** or anything else
   - Ready to start simple standard **Action** classes
   - Simple api to create your own **Actions**
