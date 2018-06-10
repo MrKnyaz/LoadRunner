@@ -210,7 +210,7 @@ public class ExampleLoginAction implements StatelessAction<ExampleLoginData> {
     }
 }
 ```
-Its pretty straightforward. You may define any Class to return, just extend **StatelessAction<someDataClass>**
+Its pretty straightforward. You may define any Class to return, just extend **StatelessAction< someDataClass >**
 
 Then you have to create some **StatefulAction<returnType, inputType>** to accept *userData* returned by **LoginAction**
 ## StatefulAction example
