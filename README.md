@@ -280,8 +280,8 @@ public class ExampleLogoutAction implements StatefulAction<String, ExampleLoginD
 }
 ```
 ## Starter
-Here we create **RandomizedActor** with another constructor which accepts *Login* and *Logout* actions,
-and also with additional parameters like *firstRandomLoginDelay* and *logoutChance*
+Here we create **RandomizedActor** with another constructor which accepts *Login* and *Logout* actions
+and additional parameters like *firstRandomLoginDelay* and *logoutChance*
 ```java
     public static void main(String[] args) {
         ParallelExecutor parallelExecutor = new ParallelExecutor();
