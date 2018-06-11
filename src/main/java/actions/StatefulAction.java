@@ -6,6 +6,6 @@ package actions;
 public interface StatefulAction<T, K> extends Action<T, K> {
 
     default T execute() {
-        throw new UnsupportedOperationException("StatefulAction must use 'currentPage' as a parameter");
+        throw new UnsupportedOperationException("StatefulAction must use 'inputData' as a parameter");
     }
 }

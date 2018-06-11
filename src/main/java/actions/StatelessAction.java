@@ -1,7 +1,5 @@
 package actions;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-
 /**
  * Child has to implement execute() method
  */
