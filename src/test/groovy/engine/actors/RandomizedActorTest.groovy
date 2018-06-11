@@ -65,10 +65,10 @@ class RandomizedActorTest extends Specification {
         and: "interactions"
         1 * loginAction.execute(_) >> "loginData"
         loginAction.getName() >> "mockLoginAction"
-        1 * logoutAction.execute(_ as String) >> 0
+        1 * logoutAction.execute(_ as String) >> ""
         logoutAction.getName() >> "logoutAction"
         1 * statefulAction.execute(_ as String) >> {
-            String s -> if (s == null) throw new ApplicationException("no data")
+            String s -> if (s == null || s != "loginData") throw new ApplicationException("no data") else return "ok"
         }
         statefulAction.getName() >> "mockAction"
 
